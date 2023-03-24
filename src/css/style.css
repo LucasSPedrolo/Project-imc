@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    --corPrimaria: #166b8d;
+}
+
+body {
+    background-color: var(--corPrimaria);
+}
+
+.container {
+    margin: 3rem auto;
+    background-color: #fff;
+    max-width: 44rem;
+    padding: 1rem;
+}
+
+form,
+label,
+input,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input,
+button {
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+form{
+    font-size: 1.2rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+}
