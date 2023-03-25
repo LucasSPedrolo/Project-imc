@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap" rel="stylesheet">
     <title>calcIMC</title>
 </head>
+
 <body>
     <section class="container">
-        <h1>Calculadora de Imc</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem corporis porro. Ab, voluptates quae. Debitis accusamus, vel cum cupiditate et repudiandae aliquam alias, porro aut nobis provident ipsam neque.</p>
+        <h1 class="titulo">Calculadora de Imc</h1>
+        <div class="valores">
+            <div class="imc ajusteDiv">
+                <h3>IMC</h3>
+                <p>Entre 18,50 e 24,99</p><br>
+                <p>Entre 25 e 29,99</p><br>
+                <p>Entre 30 e 34,99</p><br>
+                <p>Entre 35 e 39,99</p><br>
+                <p>A partir de 40</p><br>
+            </div>
+
+            <div class="categoria ajusteDiv">
+                <h3>Categoria</h3>
+                <p>Peso adequado</p><br>
+                <p>Sobrepeso</p><br>
+                <p>Obesidade (grau 1)</p><br>
+                <p>Obesidade (grau 2)</p><br>
+                <p>Obesidade (grau 3)</p><br>
+            </div>
+        </div>
 
         <h2>Calcule seu IMC</h2>
         <form class="form">
             <label for="peso">Peso:</label>
-            <input type="text" class="peso" id="peso" autocomplete="off">
-            
+            <input type="text" class="peso" id="peso" autocomplete="off"
+                placeholder="peso em kg (evite virgulas,utilize ' . ')" required>
+
             <label for="altura">Altura:</label>
-            <input type="text" id="altura" autocomplete="off">
+            <input type="text" id="altura" autocomplete="off" placeholder="altura em m (evite vurgulas,utilize ' . ')" required>
 
             <button type="submit" class="botaoCalculo">Calcular</button>
         </form>
@@ -29,4 +53,5 @@
 
     <script src="./javaScript/javascript.js"></script>
 </body>
+
 </html>
